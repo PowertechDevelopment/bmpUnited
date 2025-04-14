@@ -168,30 +168,47 @@
     <!-- Navigation Bar -->
 
 
-      <!-- Navigation Bar -->
-     <nav class="flex items-center p-5 bg-[#CCEFFF] relative">
-        <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain mr-[300px]">
-      
-        <ul class="hidden md:flex space-x-[60px] items-center">
-          <!-- HOME with Fixed Dropdown -->
-          <li class="relative group">
-            <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
-            <!-- Dropdown Menu -->
-            <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
-              <a href="https://bmpu.org/" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
-            </div>
-          </li>
-      
-          <!-- Other nav links -->
-          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
-          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
-          <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
-        </ul>
-      
-        <div class="md:hidden">☰</div>
-      </nav>
+    <!-- Navigation Bar -->
+<nav class="flex items-center justify-between p-5 bg-[#CCEFFF] relative z-50">
+    <!-- Logo -->
+    <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+  
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex space-x-[40px] items-center">
+      <!-- HOME with Dropdown -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
+        <!-- Dropdown -->
+        <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+        </div>
+      </li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
+    </ul>
+  
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-4xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Dropdown -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50 rounded">
+      <!-- HOME with Nested Dropdown -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+        </div>
+      </li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">Project</a></li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
+      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
+    </ul>
+  </nav>
+  
 
     <!-- Hero Section -->
     <section
@@ -546,3 +563,15 @@
 </body>
 
 </html>
+
+<script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  
+    function toggleSubMenu() {
+      const submenu = document.getElementById('mobileSubMenu');
+      submenu.classList.toggle('hidden');
+    }
+  </script>
