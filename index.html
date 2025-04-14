@@ -185,30 +185,35 @@
           <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
         </ul>
       
-        <!-- Hamburger Icon (Mobile Only) -->
-<div class="md:hidden cursor-pointer" onclick="toggleMobileMenu()">☰</div>
-
-<!-- Mobile Dropdown Menu (Initially Hidden) -->
-<ul id="mobileMenu" class="hidden flex-col space-y-4 mt-4 md:hidden bg-white p-4 rounded shadow-lg z-50">
-  <!-- HOME with Fixed Dropdown -->
-  <li class="relative">
-    <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-    <!-- Nested Dropdown -->
-    <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-      <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
-      <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
-    </div>
-  </li>
-
-  <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">Project</a></li>
-  <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
-  <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
-</ul>
-
-<!-- Desktop Nav -->
-<ul class="hidden md:flex space-x-[60px] items-center">
-  <!-- Same desktop nav as you already had -->
-</ul>
+       <!-- Navbar Container -->
+<div class="relative z-0">
+    <!-- Hamburger Icon (Mobile Only) -->
+    <div class="md:hidden cursor-pointer text-4xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Dropdown Menu (Overlay) -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white  flex-col space-y-4 mt-2 p-4 rounded shadow-lg z-50">
+        <!-- HOME with Fixed Dropdown -->
+        <li class="relative">
+          <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+          <!-- Nested Dropdown -->
+          <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+          </div>
+        </li>
+      
+        <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">Project</a></li>
+        <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
+        <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
+      </ul>
+      
+  </div>
+  
+  <!-- Desktop Nav -->
+  <ul class="hidden md:flex space-x-[60px] items-center">
+    <!-- Same desktop nav as you already had -->
+  </ul>
+  
 
       </nav>
 
