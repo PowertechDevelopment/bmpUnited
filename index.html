@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>…United To Serve Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+        @import "tailwindcss";
+
+        @font-face {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 200 700;
+            font-display: swap;
+            src: url("/fonts/Oswald.woff2") format("woff2");
+        }
+
+        .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+        .bangers-font {
+            font-family: "Bangers", system-ui;
+        }
+
+        .carter-font {
+            font-family: "Carter One", cursive;
+        }
+
+        .ovo-font {
+            font-family: "Ovo", serif;
+        }
+
+        .open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace <weight> with actual values like 300, 400, 600, etc. */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-[#c1d9e9] text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="flex items-center p-5 bg-[#CCEFFF] relative">
+        <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain mr-[300px]">
+      
+        <ul class="hidden md:flex space-x-[60px] items-center">
+          <!-- HOME with Fixed Dropdown -->
+          <li class="relative group">
+            <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="file:///C:/Users/PowertechDev/Desktop/bmpunited/main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+            </div>
+          </li>
+      
+          <!-- Other nav links -->
+          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
+          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+          <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
+        </ul>
+      
+        <div class="md:hidden">☰</div>
+      </nav>
+     
+      <!-- ONE -->
+<div>
+ <!-- Title -->
+ <div class="text-center mt-8">
+    <h1 id="headingText" class="poppins-bold text-2xl font-bold">Change Change Change</h1>
+  </div>
+
+  <!-- Main Section -->
+  <section class="flex flex-col md:flex-row justify-center items-start gap-8 mt-10 px-4">
+    <!-- Left Box -->
+    <div id="textBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500">
+      <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Change is Here</h2>
+      <p class="poppins-bold text-base mb-4">You probably noticed a change in the looks of bmpUnited website.</p>
+      <p class="poppins-bold text-base mb-4">Nothing wrong with your eyes. The change is from us: Adapting to changes in the business environment.</p>
+      <p class="poppins-bold text-base mb-4">As the Greek philosopher, Heraclitus, observed many years ago,</p>
+      <p class="poppins-bold text-base italic">“The only constant in life is change”.</p>
+    </div>
+
+    <!-- Right Box -->
+    <div id="RighttextBox" class=" bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500">
+      <h2 class=" poppins-bold text-xl font-bold mb-4 text-center">Our Response</h2>
+      <p class="poppins-bold text-base mb-4">
+        Ignore changes in your operating business environment, and your business will self-destruct and collapse from within. We never want that to happen.
+      </p>
+      <p class="poppins-bold text-base mb-4">
+        Our change process will be gradual and measured to minimize mistakes, as we learn.
+      </p>
+      <p class="poppins-bold text-base">
+        bmpUnited welcomes your patience and understanding as we embrace change.
+      </p>
+    </div>
+  </section>
+
+  <div id="messageBox" class="hidden flex-col bg-[#d4f1ff] rounded-xl mt-12 shadow-lg p-6 mr-[20%] ml-[20%] border border-gray-500">
+    <h2 class="poppins-bold text-xl font-bold mb-4 text-center">
+      People seem to misunderstand money (See Videos)
+    </h2>
+  </div>
+
+</div>
+
+  
+
+  <!-- Button -->
+  <div  class="text-center mt-10">
+    <button id="backText" onclick="Next()" class="poppins-bold bg-black text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-800">Read More</button>
+  </div>
+ 
+    <div
+        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+        <!-- Social Icons -->
+        <div class="bottom-[-200px] flex flex-row space-x-4">
+            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg ">
+        </div>
+
+        <!-- Footer Section -->
+        <div class="flex items-center justify-center w-full p-4 
+            ">
+            <p class="text-center">
+                Copyright &copy; 2025 <span class="mx-2 open-sans">BmpUnited.</span> <span class="mx-2 open-sans">All
+                    rights
+                    reserved.</span> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    window.onload = function () {
+      let position = 1;
+      const back = document.getElementById('backText');
+      let backText = back.innerHTML;
+  
+      const Next = () => {
+        if (position === 1) {
+          position = 2;
+          document.getElementById('messageBox').classList.remove('hidden');
+          document.getElementById('RighttextBox').classList.remove('hidden');
+          const headings = document.getElementById('headingText');
+          headings.innerHTML = 'Reasons why';
+  
+          // left textbox
+          const box = document.getElementById('textBox');
+          const heading = box.querySelector('h2');
+          const paragraphs = box.querySelectorAll('p');
+          heading.textContent = 'So why change?';
+          paragraphs[0].textContent = 'Beyond the fact that change is  inevitable. It turns out that in rushing to  be all things to all people during and  after  COVID-19,  we  probably     overextend ourselves.   More importantly, our contracts were  not fulfilled as signed by beneficiaries.   Zero % interest notwithstanding.';
+          paragraphs[1].textContent = '';
+          paragraphs[2].textContent = '';
+          paragraphs[3].textContent = '';
+  
+          // righttextbox
+          const rbox = document.getElementById('RighttextBox');
+          const rheading = rbox.querySelector('h2');
+          const rparagraphs = rbox.querySelectorAll('p');
+  
+          rheading.textContent = 'Slow or non-payment?';
+          rparagraphs[0].textContent = 'A 17% success rate is not sustainable  under any condition. One must choose  to ignore reality and go under or take  corrective steps. We chose the latter. To  oUer you a cup half full and stay in  service for you albeit in a diUerent way.';
+          rparagraphs[1].textContent = '';
+          rparagraphs[2].textContent = '';
+          rparagraphs[3].textContent = '';
+  
+        } else if (position === 2) {
+          position = 3;
+          document.getElementById('messageBox').classList.add('hidden');
+          document.getElementById('RighttextBox').classList.remove('hidden');
+          const headings = document.getElementById('headingText');
+          headings.innerHTML = 'Our new Ways';
+  
+          // lefttextbox
+          const box = document.getElementById('textBox');
+          const heading = box.querySelector('h2');
+          const paragraphs = box.querySelectorAll('p');
+  
+          heading.textContent = 'What to Expect';
+          paragraphs[0].textContent = 'Education, Healthcare, and Acts of  Mercy remain as before, but on a  reduced and a farther-reaching scale.  Beneficiaries are challenged to  connect the dots. Connecting the dots  means linking proposed project  expenditures to expected results and  benefits in a very credible manner with  hard evidence.';
+          paragraphs[1].textContent = '';
+          paragraphs[2].textContent = '';
+          paragraphs[3].textContent = '';
+  
+          // righttextbox
+          const rbox = document.getElementById('RighttextBox');
+          const rheading = rbox.querySelector('h2');
+          const rparagraphs = rbox.querySelectorAll('p');
+  
+          rheading.textContent = 'New way to suceed';
+          rparagraphs[0].textContent = ' As bmpUnited shies away from  transferring cash to your account to  fund projects, we have dramatically  increased counseling and coaching to  upgrade your human capital so that  when you do projects you know exactly  what you should do to become  successful.';
+          rparagraphs[1].textContent = '';
+          rparagraphs[2].textContent = '';
+          rparagraphs[3].textContent = '';
+  
+        } else if (position === 3) {
+          position = 4; // ❗️fixed (removed `let`)
+          document.getElementById('RighttextBox').classList.add('hidden');
+          const headings = document.getElementById('headingText');
+          headings.innerHTML = 'What you need to know';
+  
+          // lefttextbox
+          const box = document.getElementById('textBox');
+          const heading = box.querySelector('h2');
+          const paragraphs = box.querySelectorAll('p');
+          const back = document.getElementById('backText');
+          back.innerHTML = 'Back';
+          backText = back.innerHTML;
+  
+          heading.textContent = '';
+          paragraphs[0].textContent = 'In an upcoming book, Money Disorder, we intend to show how the  success or failure of your projects and business is not dependent on  money. Yes, money helps to close the deal. But being successful and  achieving your goals are dependent upon Je Ne Sais Quoi (JNSQ) or  What It Takes (WIT). More details coming soon.';
+          paragraphs[1].textContent = '';
+          paragraphs[2].textContent = '';
+          paragraphs[3].textContent = '';
+  
+        } else if (position === 4) {
+            if (backText === "Back") {
+  window.open('file:///C:/Users/PowertechDev/Desktop/bmpunited/kk.html', '_blank');
+}
+
+        }
+      };
+  
+      // make Next globally accessible
+      window.Next = Next;
+    };
+  </script>
+  
+  
+  

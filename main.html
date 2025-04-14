@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>…United To Serve Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+        @import "tailwindcss";
+
+        @font-face {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 200 700;
+            font-display: swap;
+            src: url("/fonts/Oswald.woff2") format("woff2");
+        }
+
+        .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+        .bangers-font {
+            font-family: "Bangers", system-ui;
+        }
+
+        .carter-font {
+            font-family: "Carter One", cursive;
+        }
+
+        .ovo-font {
+            font-family: "Ovo", serif;
+        }
+
+        .open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace <weight> with actual values like 300, 400, 600, etc. */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-white text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="flex  items-center p-5 bg-blue-100 shadow-md bg-gradient-to-r from-white via-lime-400 to-cyan-200">
+        <img src="./assets/logo.png" alt="Team Meeting" class=" h-[50px] object-contain mr-[300px]">
+        <ul class="hidden md:flex space-x-[60px]">
+            <li><a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a></li>
+            <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
+            <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+            <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
+            <!-- <li><a href="#" class="ovo-font font-bold hover:text-blue-500 open-sans">You're Not in a Hurry</a></li> -->
+        </ul>
+        <div class="md:hidden">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class=" text-start p-[100px] flex flex-col md:flex-row items-center bg-[url('./assets/image.png')] bg-no-repeat">
+        <div class="md:w-1/2">
+            <h1 class="text-blue-500 text-md font-bold mb-4 ovo-font"> UNITED TO SERVE</h1>
+            <h1 class="text-4xl font-bold ">Make <span class="text-blue-500 open-sans">a Lasting Impact</span><br><span
+                    class="text-black  text-4xl font-bold open-sans">With</span> <span
+                    class="text-blue-500 open-sans">BmpUnited.</span>
+            </h1>
+            <p class="mt-4 text-gray-700 max-w-2xl mx-auto open-sans">Empowering communities through healthcare,
+                education,
+                agriculture, solar
+                energy, and charity, we create lasting impact with locally executed, centrally
+                planned initiatives. Adapting to serve better, our evolving approach ensures
+                sustainability and greater benefits for all. <span class="text-blue-500 open-sans">Home</span> and <span
+                    class="text-blue-500 open-sans">About us</span></p>
+            <div class="mt-6 flex flex-row items-center gap-4">
+                <button
+                    class="bg-blue-500 open-sans text-white px-6 py-2 rounded-2xl hover:bg-blue-600 transition-colors">
+                    Discover More
+                </button>
+                <h1 class="text-md font-bold text-gray-600 open-sans">or</h1>
+                <button
+                    class="border open-sans border-blue-500 text-blue-500 px-6 py-2 rounded-2xl hover:bg-blue-50 transition-colors">
+                    Check Our Page
+                </button>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+            <img src="./assets/landimg.png" alt="Impact Image" class="w-full max-w-md rounded-lg shadow-md">
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="p-10 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Image Column -->
+                <div class="order-last md:order-first">
+                    <img src="./assets/worker.png" alt="Services Image"
+                        class="w-[600px] max-w-md rounded-lg shadow-md mx-[60px]">
+                </div>
+
+                <!-- Content Column -->
+                <div class="text-left">
+                    <h2 class="text-3xl ovo-font font-semibold mb-4">
+                        We Provide <span class="text-blue-500 ovo-font">Different Services</span> & Support
+                    </h2>
+                    <div class="bg-purple-600 w-32 h-1 mb-6"></div>
+
+                    <!-- Services Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Service Item 1 -->
+                        <div class="p-4 bg-white shadow-md rounded-lg flex items-center gap-4 min-h-[100px]">
+                            <img src="./assets/service1.png" alt="Medical Icon"
+                                class="w-12 h-12 object-cover rounded-lg">
+                            <span class="font-medium open-sans">Medical & Agricultural Support</span>
+                        </div>
+
+                        <!-- Service Item 2 -->
+                        <div class="p-4 bg-white shadow-md rounded-lg flex items-center gap-4 min-h-[100px]">
+                            <img src="./assets/service2.png" alt="Education Icon"
+                                class="w-12 h-12 object-cover rounded-lg">
+                            <span class="font-medium open-sans">Educational Assistance</span>
+                        </div>
+
+                        <!-- Service Item 3 -->
+                        <div class="p-4 bg-white shadow-md rounded-lg flex items-center gap-4 min-h-[100px]">
+                            <img src="./assets/service3.png" alt="Mercy Icon" class="w-12 h-12 object-cover rounded-lg">
+                            <span class="font-medium open-sans">Random Acts of Mercy & Kindness</span>
+                        </div>
+
+                        <!-- Service Item 4 -->
+                        <div class="p-4 bg-white shadow-md rounded-lg flex items-center gap-4 min-h-[100px]">
+                            <img src="./assets/service4.png" alt="Policies Icon"
+                                class="w-12 h-12 object-cover rounded-lg">
+                            <span class="font-medium open-sans">BmpUnited Policies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Keynote Section-->
+    <div class="px-4 py-8">
+        <h1 class="text-black text-2xl font-bold px-10 mb-4 ovo-font">Keynotes</h1>
+        <div class="bg-purple-600 w-24 h-1 mx-10 mb-8 "></div>
+        <div class=" flex overflow-x-auto space-x-8 scrollbar-hide px-10 py-10 bg-blue-100">
+            <!-- Card 1 -->
+            <div
+                class="flex-shrink-0 w-72 bg-white rounded-lg shadow-md p-8 flex flex-col justify-between min-h-[400px]">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 ovo-font">BmpUnited Project List</h3>
+                    <p class="text-gray-600 text-sm overflow-y-auto max-h-[200px] open-sans">
+                        bmpUnited has learned many lessons since it was established in the middle of COVID-19 in 2020.
+                        We are now taking corrective actions and modifying our nonprofit business practices and choices
+                        to guarantee we stay in business. Existing projects will continue to be managed carefully to
+                        ensure a better and softer landing at each project completion.
+                    </p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline mt-4 block open-sans">Learn More →</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="flex-shrink-0 w-72 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between min-h-[400px]">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 ovo-font">BmpUnited Lessons Learned</h3>
+                    <p class="text-gray-600 text-sm overflow-y-auto max-h-[200px] open-sans">
+                        Life is a long journey of learning, education, knowledge and wisdom, if you can achieve the holy
+                        grail of 'wisdom'. We ALL need to learn to grow. In the words of William S. Burroughs, “When you
+                        stop growing, you start dying". Learning is not optional if you wish to be successful. Learning
+                        and growing are the secret ingredients for success."Learning is its own exceeding great reward"
+                        -- William Hazlitt
+                    </p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline mt-4 block open-sans">Learn More →</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="flex-shrink-0 w-72 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between min-h-[400px]">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 ovo-font">Money Is Misunderstood</h3>
+                    <p class="text-gray-600 text-sm overflow-y-auto max-h-[200px] open-sans">
+                        Many people, especially the young and inexperienced, misunderstand money. Money is only a tool,
+                        not a goal. A house full of money, for example, means nothing until we see what the owner does
+                        with it. The value of money depends only on what you can do with the money, not the amount of
+                        the money.
+                    </p>
+                </div>
+                <a href="#" class="text-blue-500 hover-underline mt-4 block open-sans">Learn More →</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+                class="flex-shrink-0 w-72 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between min-h-[400px]">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 ovo-font">Money Is Misused</h3>
+                    <p class="text-gray-600 text-sm overflow-y-auto max-h-[200px] open-sans">
+                        Money is a tool that is often misused. Widespread misuse of money sends ripple effects
+                        throughout society misleading impressionable minds. People are persuaded to forego learning,
+                        education, and self-responsibility because they believe money is everything. Not true. An
+                        upcoming book Young Man In A Hurry digs into aspects of this issue in a chapter called Money
+                        Disorder. Learning and education are essential to make your own money, and essential for how
+                        best to spend it.
+                    </p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline mt-4 block open-sans">Learn More →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[url('./assets/image2.png')] bg-no-repeat h-[100px]">
+
+    </div>
+
+    <!-- Discover -->
+
+    <div class="bg-[url('./assets/image3.png')] bg-no-repeat bg-[100px_160px]">
+
+        <!-- Text Section -->
+        <div class="mb-8 text-lg font-serif text-white pl-64">
+            <span class="text-black ovo-font">Discover</span>
+            <span class="text-black ovo-font"> Our</span>
+            <span class="text-blue-700 font-bold ovo-font"> Work</span>
+            <span class="text-blue-700 font-bold ovo-font"> & Projects</span>
+            <div class="w-16 border-t-2 border-purple-600 mt-1"></div>
+        </div>
+
+        <!-- Overlapping Squares -->
+        <div class="pt-2 bottom-10 right-10 flex space-x-6 pb-4 px-10 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div class=" w-[250px] h-[300px] p-2">
+                <img src="./assets/projects.png" alt="Policies Icon"
+                    class="w-[250px] h-[250px] object-cover rounded-tl-lg rounded-tr-lg">
+                <div
+                    class="w-[235px] h-[50px] flex justify-between items-center p-2 bg-blue-100 rounded-bl-lg rounded-br-lg">
+                    <h1 class="text-sm font-bold open-sans">Rocking Nonagenarian</h1>
+                    <a href="#" class="text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-10 10a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l10-10zM14 7l-1-1-7 7 1 1 7-7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" w-[250px] h-[300px] p-2 bg-white">
+                <img src="./assets/projects-01.png" alt="Policies Icon"
+                    class="w-[250px] h-[250px] object-cover rounded-tl-lg rounded-tr-lg">
+                <div
+                    class="w-[235px] h-[50px] flex justify-between items-center p-2 bg-blue-100 rounded-bl-lg rounded-br-lg">
+                    <h1 class="text-sm font-bold open-sans">Rocking Nonagenarian</h1>
+                    <a href="#" class="text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-10 10a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l10-10zM14 7l-1-1-7 7 1 1 7-7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" w-[250px] h-[300px] p-2 bg-white ">
+                <img src="./assets/projects-02.png" alt="Policies Icon"
+                    class="w-[250px] h-[250px] object-cover rounded-tl-lg rounded-tr-lg">
+                <div
+                    class="w-[235px] h-[50px] flex justify-between items-center p-2 bg-blue-100 rounded-bl-lg rounded-br-lg">
+                    <h1 class="text-sm font-bold open-sans">Rocking Nonagenarian</h1>
+                    <a href="#" class="text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-10 10a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l10-10zM14 7l-1-1-7 7 1 1 7-7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" w-[250px] h-[300px] p-2 bg-white ">
+                <img src="./assets/projects-02.png" alt="Policies Icon"
+                    class="w-[250px] h-[250px] object-cover rounded-tl-lg rounded-tr-lg">
+                <div
+                    class="w-[235px] h-[50px] flex justify-between items-center p-2 bg-blue-100 rounded-bl-lg rounded-br-lg">
+                    <h1 class="text-sm font-bold open-sans">Rocking Nonagenarian</h1>
+                    <a href="#" class="text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-10 10a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l10-10zM14 7l-1-1-7 7 1 1 7-7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" w-[250px] h-[300px] p-2 bg-white ">
+                <img src="./assets/projects-02.png" alt="Policies Icon"
+                    class="w-[250px] h-[250px] object-cover rounded-tl-lg rounded-tr-lg">
+                <div
+                    class="w-[235px] h-[50px] flex justify-between items-center p-2 bg-blue-100 rounded-bl-lg rounded-br-lg">
+                    <h1 class="text-sm font-bold open-sans">Rocking Nonagenarian</h1>
+                    <a href="#" class="text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-10 10a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l10-10zM14 7l-1-1-7 7 1 1 7-7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="  absolute pt-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]  w-full flex justify-end">
+        </div>
+
+    </div>
+
+
+
+    <!-- About Us Section -->
+    <div
+        class="pt-24 bg-[url('./assets/image3.png')] bg-no-repeat p-10 justify-center mt-20 max-w-full mx-auto bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+        <img src="./assets/aboutimg.png" alt="Team Meeting" class=" h-[500px] object-contain">
+        <div class="p-6 w-full md:w-1/2">
+            <h2 class="text-lg font-semibold ovo-font">More <span class="text-blue-500 ovo-font">About Us</span> & What
+                <span class="text-blue-500 ovo-font">We Offer</span>
+            </h2>
+            <div class="w-16 h-1 bg-purple-500 my-2"></div>
+            <p class="text-gray-600 text-2xl pt-10 open-sans">Like plants, communities grow with the right care.
+                bmpUnited
+                supports this
+                growth through healthcare, education, agriculture, and solar energy, empowering people and driving
+                sustainable change. By addressing critical needs and nurturing potential, we create lasting impact and
+                stronger communities..</p>
+            <p class="font-semibold mt-2 text-black text-xl pt-10 open-sans">Would You Like To Join The BmpUnited
+                Movement?
+                Contact Us!</p>
+            <button class="mt-10 bg-blue-500 text-black px-4 py-2 rounded-lg shadow-md open-sans">Check Out Our
+                Testimonials</button>
+        </div>
+        <div
+            class="  absolute pt-[650px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]  w-full flex left-[-1200px]">
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="mt-24 bg-[url('./assets/image5.png')] bg-no-repeat">
+        <div class=" mt-10 max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row">
+            <div class="w-full md:w-2/3 p-4 justify-center">
+                <h2 class="text-lg font-semibold ovo-font">Contact Us & Get In <span
+                        class="text-blue-500 ovo-font">Touch</span></h2>
+                <div class="w-16 h-1 bg-purple-500 my-2"></div>
+                <div class="space-y-4  mt-4">
+                    <div class="flex space-x-4">
+                        <input type="text" placeholder="Your Name..." class="w-1/2 p-2 bg-blue-100 rounded">
+                        <input type="text" placeholder="Your Surname..." class="w-1/2 p-2 bg-blue-100 rounded">
+                    </div>
+                    <input type="email" placeholder="Your E-mail..." class="w-full p-2 bg-blue-100 rounded">
+                    <textarea placeholder="Your Message" class="w-full p-2 bg-blue-100 rounded h-24"></textarea>
+                    <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md open-sans">Send Message
+                        Now</button>
+                </div>
+                <div class="flex justify-center mt-10 bg-blue-100 h-[130px] rounded-bl-lg rounded-br-lg pl-10 pr-10">
+                    <div class=" mt-4 space-y-4 flex flex-col  items-center ">
+                        <img src="./assets/phone.png" alt="Education Icon"
+                            class="w-[18px] h-[22px] object-contain rounded-lg">
+                        <span class="block font-medium text-sm justify-center items-center open-sans">Educational
+                            Assistance</span>
+                    </div>
+                    <div class=" mt-4 space-x-4 flex flex-col space-y-4 items-center ">
+                        <img src="./assets/email.png" alt="Education Icon"
+                            class="w-[19px] h-[22px] object-contain rounded-lg">
+                        <span
+                            class="block font-medium text-sm justify-center items-center open-sans">Charlie.Ukwu@bmpu.org</span>
+                    </div>
+                    <div class="mt-4 space-x-4 flex flex-col space-y-4 items-center ">
+                        <img src="./assets/location.png" alt="Education Icon"
+                            class="w-[18px] h-[22px] object-contain rounded-lg">
+                        <span class="justify-start block font-medium text-sm text-center open-sans">
+                            1501 Timber Wolf Dr. Durham, NC 27713 United States
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-full md:w-1/3">
+                <img src="./assets/map.png" alt="Map" class="w-full h-full object-cover rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+        <!-- Social Icons -->
+        <div class="bottom-[-200px] flex flex-row space-x-4">
+            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg ">
+        </div>
+
+        <!-- Footer Section -->
+        <div class="flex items-center justify-center w-full p-4 
+            ">
+            <p class="text-center">
+                Copyright &copy; 2025 <span class="mx-2 open-sans">BmpUnited.</span> <span class="mx-2 open-sans">All
+                    rights
+                    reserved.</span> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
