@@ -166,17 +166,32 @@
 
 <body class="bg-white text-gray-900">
     <!-- Navigation Bar -->
-    <nav class="flex  items-center p-5 bg-blue-100 shadow-md bg-gradient-to-r from-white via-lime-400 to-cyan-200">
-        <img src="./assets/logo.png" alt="Team Meeting" class=" h-[50px] object-contain mr-[300px]">
-        <ul class="hidden md:flex space-x-[60px]">
-            <li><a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a></li>
-            <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
-            <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
-            <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
-            <!-- <li><a href="#" class="ovo-font font-bold hover:text-blue-500 open-sans">You're Not in a Hurry</a></li> -->
+
+
+      <!-- Navigation Bar -->
+     <nav class="flex items-center p-5 bg-[#CCEFFF] relative">
+        <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain mr-[300px]">
+      
+        <ul class="hidden md:flex space-x-[60px] items-center">
+          <!-- HOME with Fixed Dropdown -->
+          <li class="relative group">
+            <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+              <a href="https://bmpu.org/" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+            </div>
+          </li>
+      
+          <!-- Other nav links -->
+          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Project</a></li>
+          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+          <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
         </ul>
+      
         <div class="md:hidden">☰</div>
-    </nav>
+      </nav>
 
     <!-- Hero Section -->
     <section
